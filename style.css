@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #37554b;
+}
+
+.wrapper{
+    background-color: #eeeeee;
+    width: 370px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper *{
+    margin-bottom: 7px;
+}
+
+.wrapper header{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+
+form :where(input,select,button){
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+}
+
+form input {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid rgb(219, 118, 219);
+}
+
+form p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+form .drop-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 115px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+.select-box select{
+    width: auto;
+    background: none;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+.select-box img{
+    max-width: 25px;
+    
+}
+
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.icon{
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+
+button{
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(184, 1, 184);
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: rgb(219, 118, 219);
+}
+
+@media (max-width:320px) {
+    .wrapper{
+        width: 320px;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
